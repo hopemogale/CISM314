@@ -15,25 +15,25 @@ Extend Cradle.pas and the given code to accommodate the following expressions an
 \f0\b\fs52 		      ((X + Y) - Z)\
 			  ((X * Y) / Z)\
 
-\f1\b0\fs32 The program should be able to use the stack to evaluate expressions and perform multiplication and division.\
+\f1\b0\fs32 The program should be able to use the stack for expressions and perform multiplication and division.\
 
 \b Task 1.
 \b0 \
-First begin by extending cradle to allow parenthesis.\
-Use the following.\
+First begin by extending cradle to use the stack with.\
+Substitute the following on EmitLn.\
 \pard\pardeftab720\sl280\partightenfactor0
 
 \f3\fs28 \cf2 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 EmitLn('MOVE D0,-(SP)');  for expression\
+EmitLn('MOVE D0,-(SP)');  for expression\
 and the two lines in Add and Subtract to EmitLn('ADD (SP)+,D0') and EmitLn('SUB (SP)+,D0'),
-\f1\fs32 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\f1\fs32 \cf0 \kerning1\expnd0\expndtw0 \
 \
 \
 \pard\pardeftab720\sl276\slmult1\sa200\partightenfactor0
 
-\b \cf0 Task 2. - Adding Multiplication and Division\
+\b \cf0 Task 2. - Adding Multiplication and Division and Parenthesis\
 \pard\pardeftab720\sl276\slmult1\sa200\partightenfactor0
 
 \b0 \cf0 Use the code given in 
 \b Extension.pas
-\b0  to allow cradle.pas to handle division and multiplication.}
+\b0  to allow cradle.pas to handle division and multiplication and lastly parenthesis.}
